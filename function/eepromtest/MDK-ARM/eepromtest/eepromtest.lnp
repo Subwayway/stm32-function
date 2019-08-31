@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"eepromtest\main.o"
+"eepromtest\stm32f1xx_it.o"
+"eepromtest\stm32f1xx_hal_msp.o"
+"eepromtest\startup_stm32f103xb.o"
+"eepromtest\stm32f1xx_hal_gpio_ex.o"
+"eepromtest\stm32f1xx_hal_tim.o"
+"eepromtest\stm32f1xx_hal_tim_ex.o"
+"eepromtest\stm32f1xx_hal_uart.o"
+"eepromtest\stm32f1xx_hal.o"
+"eepromtest\stm32f1xx_hal_rcc.o"
+"eepromtest\stm32f1xx_hal_rcc_ex.o"
+"eepromtest\stm32f1xx_hal_gpio.o"
+"eepromtest\stm32f1xx_hal_dma.o"
+"eepromtest\stm32f1xx_hal_cortex.o"
+"eepromtest\stm32f1xx_hal_pwr.o"
+"eepromtest\stm32f1xx_hal_flash.o"
+"eepromtest\stm32f1xx_hal_flash_ex.o"
+"eepromtest\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "eepromtest\eepromtest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "eepromtest.map" -o eepromtest\eepromtest.axf

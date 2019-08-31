@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"ledswitch\startup_stm32f103xb.o"
+"ledswitch\main.o"
+"ledswitch\stm32f1xx_it.o"
+"ledswitch\stm32f1xx_hal_msp.o"
+"ledswitch\stm32f1xx_hal_gpio_ex.o"
+"ledswitch\stm32f1xx_hal_tim.o"
+"ledswitch\stm32f1xx_hal_tim_ex.o"
+"ledswitch\stm32f1xx_hal_uart.o"
+"ledswitch\stm32f1xx_hal.o"
+"ledswitch\stm32f1xx_hal_rcc.o"
+"ledswitch\stm32f1xx_hal_rcc_ex.o"
+"ledswitch\stm32f1xx_hal_gpio.o"
+"ledswitch\stm32f1xx_hal_dma.o"
+"ledswitch\stm32f1xx_hal_cortex.o"
+"ledswitch\stm32f1xx_hal_pwr.o"
+"ledswitch\stm32f1xx_hal_flash.o"
+"ledswitch\stm32f1xx_hal_flash_ex.o"
+"ledswitch\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "ledswitch\ledswitch.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ledswitch.map" -o ledswitch\ledswitch.axf

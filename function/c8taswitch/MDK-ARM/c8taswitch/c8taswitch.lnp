@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"c8taswitch\startup_stm32f103xb.o"
+"c8taswitch\main.o"
+"c8taswitch\stm32f1xx_it.o"
+"c8taswitch\stm32f1xx_hal_msp.o"
+"c8taswitch\stm32f1xx_hal_gpio_ex.o"
+"c8taswitch\stm32f1xx_hal_tim.o"
+"c8taswitch\stm32f1xx_hal_tim_ex.o"
+"c8taswitch\stm32f1xx_hal.o"
+"c8taswitch\stm32f1xx_hal_rcc.o"
+"c8taswitch\stm32f1xx_hal_rcc_ex.o"
+"c8taswitch\stm32f1xx_hal_gpio.o"
+"c8taswitch\stm32f1xx_hal_dma.o"
+"c8taswitch\stm32f1xx_hal_cortex.o"
+"c8taswitch\stm32f1xx_hal_pwr.o"
+"c8taswitch\stm32f1xx_hal_flash.o"
+"c8taswitch\stm32f1xx_hal_flash_ex.o"
+"c8taswitch\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "c8taswitch\c8taswitch.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "c8taswitch.map" -o c8taswitch\c8taswitch.axf
